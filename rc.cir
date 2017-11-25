@@ -1,0 +1,13 @@
+RC Circuit
+vin 1 0 1.0
+r1 1 2 1MEG
+c1 2 0 1uF
+.ic V(1)=0 V(2)=0
+.tran .001s 5s
+
+.control
+run
+hardcopy a.ps v(1),v(2)
+.endc
+
+.end
